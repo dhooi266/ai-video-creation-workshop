@@ -25,7 +25,7 @@ Fonts (Archivo, Spectral, IBM Plex Mono) load from Google Fonts. Everything else
 
 ## Page structure
 
-1. Hero — cover banner, in-house positioning, at-a-glance card
+1. Hero — cover banner, workshop positioning, at-a-glance card
 2. Programme overview — the business case, plus "Why companies run this" and "How we deliver it"
 3. What you'll gain — six capability cards
 4. Showreel — three finished sample videos
