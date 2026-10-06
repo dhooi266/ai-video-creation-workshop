@@ -1,0 +1,1172 @@
+<title>AI Video Creation for Teams</title>
+<meta name="description" content="Beginner-friendly 2-day hands-on AI video workshop. Learn to create AI short films, ads and music videos — no experience needed. HRD Corp claimable.">
+
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="D Action Consultancy">
+<meta property="og:title" content="AI-Powered Video Creation Mastery — In-House Corporate Workshop">
+<meta property="og:description" content="Learn to create AI short films, ads and music videos. Beginner friendly, fully hands-on, no experience needed. HRD Corp claimable &mdash; available as a public or in-house run.">
+<meta property="og:url" content="https://dhooi266.github.io/ai-video-creation-workshop/">
+<meta property="og:image" content="https://dhooi266.github.io/ai-video-creation-workshop/og-image.jpg">
+<meta property="og:image:secure_url" content="https://dhooi266.github.io/ai-video-creation-workshop/og-image.jpg">
+<meta property="og:image:type" content="image/jpeg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="AI-Powered Video Creation Mastery workshop poster with trainer David Hooi.">
+<meta property="og:locale" content="en_MY">
+
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="AI-Powered Video Creation Mastery — In-House Corporate Workshop">
+<meta name="twitter:description" content="Learn to create AI short films, ads and music videos. Beginner friendly, fully hands-on, no experience needed.">
+<meta name="twitter:image" content="https://dhooi266.github.io/ai-video-creation-workshop/og-image.jpg">
+
+<meta name="theme-color" content="#070b1f">
+<link rel="icon" href="dac-logo.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:ital,wdth,wght@0,100..125,400..900&family=IBM+Plex+Mono:wght@400;500;600&family=Spectral:ital,wght@0,300;0,400;0,600;1,400&display=swap">
+
+<style>
+/* Single committed visual world: the poster's neon-on-navy grade.
+   Every colour is painted explicitly so the page holds on any host ground. */
+:root{
+  --navy:#070b1f;
+  --navy-2:#0d1330;
+  --panel:#111a3d;
+  --line:#2a3570;
+  --line-soft:#1d2550;
+  --ink:#f4f6ff;
+  --muted:#9aa6d4;
+
+  --blue:#2ea8ff;
+  --cyan:#22e3ee;
+  --magenta:#ff3ea5;
+  --purple:#a855f7;
+  --gold:#ffd21e;
+  --lime:#63e6a0;
+  --orange:#ff7a3d;
+
+  --grad-hot:linear-gradient(95deg,#ff3ea5 0%,#ff7a3d 45%,#ffd21e 100%);
+  --grad-cool:linear-gradient(95deg,#2ea8ff 0%,#22e3ee 55%,#63e6a0 100%);
+  --grad-spectrum:linear-gradient(90deg,#2ea8ff,#22e3ee,#63e6a0,#ffd21e,#ff7a3d,#ff3ea5,#a855f7);
+}
+
+*{box-sizing:border-box}
+body{
+  background:
+    radial-gradient(1100px 620px at 78% -8%, rgba(168,85,247,.30), transparent 60%),
+    radial-gradient(900px 560px at 10% 4%, rgba(46,168,255,.26), transparent 62%),
+    radial-gradient(900px 700px at 50% 108%, rgba(255,62,165,.20), transparent 60%),
+    var(--navy);
+  color:var(--ink);
+  font-family:"Spectral",Georgia,"Times New Roman",serif;
+  font-size:17px;
+  line-height:1.65;
+  -webkit-font-smoothing:antialiased;
+}
+.wrap{max-width:1100px;margin:0 auto;padding-inline:20px}
+
+h1,h2,h3,.display{
+  font-family:"Archivo","Arial Narrow",Helvetica,sans-serif;
+  font-stretch:118%;
+  font-weight:800;
+  line-height:1.03;
+  letter-spacing:-.015em;
+  text-wrap:balance;
+  margin:0;
+  color:var(--ink);
+}
+.mono{font-family:"IBM Plex Mono",ui-monospace,Menlo,Consolas,monospace;font-feature-settings:"tnum" 1}
+.eyebrow{
+  font-family:"IBM Plex Mono",ui-monospace,monospace;
+  font-size:11px;font-weight:600;letter-spacing:.22em;text-transform:uppercase;
+  color:var(--cyan);margin:0;
+}
+a{color:inherit}
+p{margin:0}
+
+/* ---------- icons ---------- */
+.ic{width:20px;height:20px;flex:none;stroke:currentColor;fill:none;stroke-width:1.7;stroke-linecap:round;stroke-linejoin:round}
+.ic-sm{width:16px;height:16px}
+.ic-lg{width:26px;height:26px}
+.ic-box{
+  width:42px;height:42px;border-radius:12px;
+  display:grid;place-items:center;flex:none;
+  border:1px solid var(--line);
+  background:rgba(255,255,255,.05);
+}
+
+/* ---------- top bar ---------- */
+.topbar{
+  border-bottom:1px solid var(--line);
+  background:rgba(7,11,31,.85);
+  backdrop-filter:blur(10px);
+  position:sticky;top:0;z-index:20;
+}
+.topbar-in{display:flex;flex-wrap:wrap;gap:12px 20px;align-items:center;justify-content:space-between;padding-block:13px}
+.brand{display:flex;align-items:center;gap:10px}
+.rec{width:9px;height:9px;border-radius:50%;background:var(--magenta);flex:none;
+  box-shadow:0 0 0 0 rgba(255,62,165,.6);animation:pulse 2.6s ease-out infinite}
+@keyframes pulse{0%{box-shadow:0 0 0 0 rgba(255,62,165,.55)}70%{box-shadow:0 0 0 11px rgba(255,62,165,0)}100%{box-shadow:0 0 0 0 rgba(255,62,165,0)}}
+.brand span{font-size:12px;letter-spacing:.16em;text-transform:uppercase;font-weight:600;font-family:"Archivo",sans-serif}
+.logo-chip{
+  display:inline-flex;align-items:center;
+  background:#fdfdfb;border-radius:10px;padding:6px 11px;
+  box-shadow:0 4px 18px rgba(4,7,25,.45);
+}
+.logo-chip img{display:block;height:26px;width:auto;max-width:100%}
+.foot-logo{align-self:flex-start;margin-bottom:4px}
+.foot-logo img{height:46px}
+.cta-logo{padding:10px 16px;border-radius:14px}
+.cta-logo img{height:48px}
+.topbar .btn{padding:9px 18px;font-size:12px}
+
+/* ---------- buttons ---------- */
+.btn{
+  display:inline-flex;align-items:center;gap:10px;
+  font-family:"IBM Plex Mono",ui-monospace,monospace;
+  font-size:13px;font-weight:600;letter-spacing:.1em;text-transform:uppercase;
+  text-decoration:none;
+  padding:15px 28px;
+  border:0;border-radius:999px;
+  background:var(--grad-hot);
+  color:#1a0b16;
+  box-shadow:0 10px 30px rgba(255,62,165,.30);
+  transition:transform .16s ease, box-shadow .16s ease, filter .16s ease;
+}
+.btn:hover{transform:translateY(-2px);box-shadow:0 16px 40px rgba(255,62,165,.45);filter:brightness(1.05)}
+.btn .ic{stroke-width:2.2}
+.btn-ghost{background:transparent;color:var(--ink);border:1px solid var(--line);box-shadow:none}
+.btn-ghost:hover{border-color:var(--cyan);color:var(--cyan);box-shadow:0 0 26px rgba(34,227,238,.20)}
+a:focus-visible,button:focus-visible{outline:2px solid var(--cyan);outline-offset:3px}
+
+/* ---------- hero ---------- */
+.hero{padding-block:34px 44px}
+.cover{margin:0 0 38px;position:relative}
+.cover img{
+  display:block;width:100%;height:auto;
+  border-radius:18px;border:1px solid var(--line);
+  box-shadow:0 34px 80px rgba(4,7,25,.75);
+}
+.cover::after{
+  content:"";position:absolute;inset:-14px;border-radius:26px;z-index:-1;
+  background:radial-gradient(60% 70% at 50% 50%, rgba(168,85,247,.35), transparent 70%);
+  filter:blur(18px);
+}
+.hero-grid{display:grid;grid-template-columns:1.08fr .92fr;gap:46px;align-items:center}
+.hero-copy{min-width:0}
+.hero h1{font-size:clamp(34px,5vw,58px);margin-block:14px 0}
+
+/* at-a-glance card */
+.glance{
+  border:1px solid var(--line);border-radius:18px;
+  background:linear-gradient(160deg,rgba(26,37,89,.95),rgba(13,19,48,.96));
+  padding:26px 26px 24px;
+  box-shadow:0 26px 60px rgba(4,7,25,.6);
+  display:flex;flex-direction:column;gap:16px;
+}
+.glance-head{
+  display:flex;align-items:center;gap:9px;
+  font-family:"IBM Plex Mono",monospace;font-size:11px;font-weight:600;
+  letter-spacing:.2em;text-transform:uppercase;color:var(--cyan);
+  padding-bottom:14px;border-bottom:1px solid var(--line);
+}
+.glance-list{margin:0;display:flex;flex-direction:column;gap:15px}
+.g-row{display:grid;grid-template-columns:38px 1fr;grid-template-rows:auto auto;column-gap:14px;align-items:center}
+.g-row .ic-box{grid-row:1/3;width:38px;height:38px;border-radius:11px;color:var(--c);border-color:var(--line)}
+.g-row dt{
+  font-family:"IBM Plex Mono",monospace;font-size:9.5px;letter-spacing:.2em;
+  text-transform:uppercase;color:var(--muted);
+}
+.g-row dd{
+  margin:0;font-family:"Archivo",sans-serif;font-stretch:110%;font-weight:700;
+  font-size:15.5px;line-height:1.25;color:var(--ink);
+}
+.g-row dd span{
+  display:block;font-family:"Spectral",Georgia,serif;font-weight:400;
+  font-size:13px;color:var(--muted);margin-top:3px;line-height:1.4;
+}
+.g-row.fee{border-top:1px solid var(--line);padding-top:15px}
+.g-row.fee dd strong{font-weight:900;font-size:20px;color:var(--gold)}
+.g-row.fee dd span s{text-decoration-color:var(--magenta)}
+.glance-btn{width:100%;justify-content:center;margin-top:2px}
+.hero h1 .l2{background:var(--grad-cool);-webkit-background-clip:text;background-clip:text;color:transparent;display:block}
+.hero h1 .l3{background:var(--grad-hot);-webkit-background-clip:text;background-clip:text;color:transparent;display:block}
+.badges{display:flex;flex-wrap:wrap;gap:8px;margin-top:20px}
+.badge{
+  display:inline-flex;align-items:center;gap:7px;
+  font-family:"IBM Plex Mono",monospace;font-size:11px;letter-spacing:.11em;text-transform:uppercase;
+  padding:6px 13px;border-radius:999px;
+  border:1px solid var(--line);color:var(--muted);background:rgba(17,26,61,.6);
+}
+.badge.hi{border-color:var(--gold);color:var(--gold);background:rgba(255,210,30,.09)}
+.lede{font-size:clamp(17px,2vw,20px);color:#c3cbec;max-width:52ch;margin-top:20px}
+.hero-cta{display:flex;flex-wrap:wrap;gap:11px;margin-top:28px;align-items:center}
+.hero-cta .btn-ghost{padding:14px 20px}
+.seat-note .dot{color:var(--line);margin-inline:2px}
+.inline-link{color:var(--cyan);text-decoration:none;border-bottom:1px solid rgba(34,227,238,.4);padding-bottom:1px}
+.inline-link:hover{border-bottom-color:var(--cyan)}
+.seat-note{display:inline-flex;align-items:center;gap:8px;font-size:13px;color:var(--muted);font-family:"IBM Plex Mono",monospace;letter-spacing:.04em}
+
+/* film-strip scrubber */
+.scrub{margin-top:40px}
+.scrub-track{display:flex;border-radius:12px;overflow:hidden;border:1px solid var(--line);box-shadow:0 20px 60px rgba(4,7,25,.7)}
+.clip{
+  flex:1;height:54px;
+  display:flex;align-items:center;justify-content:center;gap:7px;
+  font-family:"IBM Plex Mono",monospace;font-size:10.5px;letter-spacing:.12em;text-transform:uppercase;
+  color:#0a0f24;font-weight:600;
+  border-right:1px solid rgba(7,11,31,.5);
+  position:relative;overflow:hidden;
+}
+.clip:last-child{border-right:0}
+.clip:nth-child(1){background:#2ea8ff}
+.clip:nth-child(2){background:#22e3ee}
+.clip:nth-child(3){background:#63e6a0}
+.clip:nth-child(4){background:#ffd21e}
+.clip:nth-child(5){background:#ff7a3d}
+.clip:nth-child(6){background:#ff3ea5}
+.clip .ic{width:15px;height:15px;stroke-width:2}
+.clip::after{
+  content:"";position:absolute;inset:0;
+  background:linear-gradient(100deg,transparent 40%,rgba(255,255,255,.55) 50%,transparent 60%);
+  transform:translateX(-120%);animation:sweep 5.5s ease-in-out infinite;
+}
+.clip:nth-child(2)::after{animation-delay:.22s}
+.clip:nth-child(3)::after{animation-delay:.44s}
+.clip:nth-child(4)::after{animation-delay:.66s}
+.clip:nth-child(5)::after{animation-delay:.88s}
+.clip:nth-child(6)::after{animation-delay:1.1s}
+@keyframes sweep{0%{transform:translateX(-120%)}35%,100%{transform:translateX(220%)}}
+.scrub-legend{display:flex;justify-content:space-between;margin-top:9px;font-size:11px;color:var(--muted);font-family:"IBM Plex Mono",monospace;letter-spacing:.1em}
+
+/* ---------- fact strip ---------- */
+.facts{
+  display:grid;grid-template-columns:repeat(4,1fr);
+  gap:1px;background:var(--line);
+  border:1px solid var(--line);border-radius:14px;overflow:hidden;
+  box-shadow:0 18px 50px rgba(4,7,25,.55);
+}
+.fact{background:linear-gradient(180deg,#111a3d,#0d1330);padding:22px 20px;display:flex;flex-direction:column;gap:9px;position:relative}
+.fact::before{content:"";position:absolute;inset:0 0 auto 0;height:3px}
+.fact:nth-child(1)::before{background:#2ea8ff}
+.fact:nth-child(2)::before{background:#22e3ee}
+.fact:nth-child(3)::before{background:#ffd21e}
+.fact:nth-child(4)::before{background:#ff3ea5}
+.fact:nth-child(1) .ic-box{color:#2ea8ff}
+.fact:nth-child(2) .ic-box{color:#22e3ee}
+.fact:nth-child(3) .ic-box{color:#ffd21e}
+.fact:nth-child(4) .ic-box{color:#ff3ea5}
+.fact .k{font-size:10px;letter-spacing:.2em;text-transform:uppercase;color:var(--muted);font-family:"IBM Plex Mono",monospace}
+.fact .v{font-family:"Archivo",sans-serif;font-stretch:112%;font-weight:700;font-size:16.5px;line-height:1.25;color:var(--ink)}
+.fact .s{font-size:13px;color:var(--muted);line-height:1.4}
+
+/* ---------- sections ---------- */
+section{padding-block:60px}
+.sec-head{display:flex;align-items:center;gap:14px;margin-bottom:28px;flex-wrap:wrap}
+.sec-head h2{font-size:clamp(26px,4.2vw,40px)}
+.sec-head .ic-box{color:var(--cyan)}
+.rule{flex:1;height:2px;min-width:30px;background:var(--grad-spectrum);opacity:.65;border-radius:2px}
+.body-col{max-width:66ch;font-size:18px;color:#c3cbec}
+.body-col + .body-col{margin-top:16px}
+.body-col strong{color:var(--ink);font-weight:600}
+
+/* gains */
+.gains{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+.gain{
+  background:linear-gradient(180deg,rgba(17,26,61,.92),rgba(13,19,48,.92));
+  border:1px solid var(--line);border-radius:16px;
+  overflow:hidden;display:flex;flex-direction:column;
+  transition:transform .2s ease, border-color .2s ease, box-shadow .2s ease;
+}
+.gain:hover{transform:translateY(-4px);border-color:var(--c);box-shadow:0 18px 44px rgba(4,7,25,.6)}
+.gain-art{display:block;width:100%;height:auto;border-bottom:1px solid var(--line)}
+.gain-body{padding:20px 22px 24px;display:flex;flex-direction:column;gap:10px}
+.gain .n{display:flex;align-items:center;gap:8px;font-family:"IBM Plex Mono",monospace;font-size:11px;letter-spacing:.14em;color:var(--c)}
+.gain h3{font-size:19px;font-stretch:110%}
+.gain p{font-size:15.5px;color:var(--muted);line-height:1.55}
+
+/* showreel */
+.reel{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+.reel-card{
+  display:flex;flex-direction:column;text-decoration:none;
+  border:1px solid var(--line);border-radius:16px;overflow:hidden;
+  background:linear-gradient(180deg,rgba(17,26,61,.92),rgba(13,19,48,.92));
+  transition:transform .2s ease, border-color .2s ease, box-shadow .2s ease;
+}
+.reel-card:hover{transform:translateY(-4px);border-color:var(--c);box-shadow:0 20px 48px rgba(4,7,25,.65)}
+.reel-art{position:relative;display:block;background:#0a0f26}
+.reel-art img{
+  display:block;width:100%;aspect-ratio:16/9;max-width:100%;
+  object-fit:cover;object-position:center 42%;
+  border-bottom:1px solid var(--line);
+  transition:transform .35s ease, filter .25s ease;
+  filter:saturate(1.02);
+}
+.reel-card:hover .reel-art img{transform:scale(1.04);filter:saturate(1.12) brightness(1.04)}
+.reel-art::after{
+  content:"";position:absolute;inset:0;pointer-events:none;
+  background:linear-gradient(180deg,rgba(7,11,31,.34) 0%,transparent 34%,transparent 58%,rgba(7,11,31,.62) 100%);
+}
+.reel-play{position:absolute;inset:0;display:grid;place-items:center;z-index:2}
+.reel-plat{z-index:2}
+.reel-play i{
+  width:62px;height:62px;border-radius:50%;
+  display:grid;place-items:center;
+  background:rgba(7,11,31,.55);border:2px solid #f4f6ff;
+  transition:transform .2s ease, background .2s ease;
+}
+.reel-play svg{width:26px;height:26px;fill:#f4f6ff;stroke:none;border:0}
+.reel-card:hover .reel-play i{transform:scale(1.09);background:var(--c);border-color:var(--c)}
+.reel-card:hover .reel-play svg{fill:#0a0f24}
+.reel-plat{
+  position:absolute;top:12px;left:12px;
+  display:inline-flex;align-items:center;gap:6px;
+  font-family:"IBM Plex Mono",monospace;font-size:10.5px;letter-spacing:.12em;text-transform:uppercase;
+  padding:5px 10px;border-radius:999px;background:rgba(7,11,31,.72);color:#f4f6ff;border:1px solid rgba(244,246,255,.25);
+}
+.reel-body{padding:20px 22px 22px;display:flex;flex-direction:column;gap:9px}
+.reel-body .n{display:flex;align-items:center;gap:8px;font-family:"IBM Plex Mono",monospace;font-size:11px;letter-spacing:.14em;color:var(--c)}
+.reel-body h3{font-size:18.5px;font-stretch:110%}
+.reel-body p{font-size:15.5px;color:var(--muted);line-height:1.55}
+.reel-body .go{display:inline-flex;align-items:center;gap:8px;margin-top:4px;font-family:"IBM Plex Mono",monospace;font-size:12px;letter-spacing:.08em;color:var(--c)}
+.reel-note{margin-top:18px;display:flex;align-items:flex-start;gap:10px;font-size:14.5px;color:var(--muted)}
+.reel-note .ic{color:var(--gold);margin-top:4px}
+
+/* outcomes */
+.outcomes{list-style:none;padding:0;margin:0;display:grid;grid-template-columns:1fr 1fr;gap:12px 20px}
+.outcomes li{
+  display:flex;gap:13px;align-items:flex-start;
+  font-size:16.5px;line-height:1.5;color:#c9d0ef;
+  padding:16px 18px;border-radius:12px;
+  background:rgba(17,26,61,.55);border:1px solid var(--line-soft);
+}
+.outcomes li .tick{
+  flex:none;width:24px;height:24px;border-radius:50%;
+  display:grid;place-items:center;color:#0a0f24;margin-top:2px;
+}
+.outcomes li .tick .ic{width:14px;height:14px;stroke-width:3}
+
+/* ---------- timeline ---------- */
+.day{margin-bottom:48px}
+.day-head{display:flex;align-items:center;gap:14px;flex-wrap:wrap;padding-bottom:14px;position:relative}
+.day-head::after{content:"";position:absolute;left:0;right:0;bottom:0;height:3px;border-radius:2px}
+.day1 .day-head::after{background:linear-gradient(90deg,#2ea8ff,#22e3ee,#63e6a0)}
+.day2 .day-head::after{background:var(--grad-hot)}
+.day-tag{
+  display:inline-flex;align-items:center;gap:7px;
+  font-family:"IBM Plex Mono",monospace;font-size:11px;font-weight:600;
+  letter-spacing:.18em;text-transform:uppercase;
+  padding:6px 13px;border-radius:999px;color:#0a0f24;
+}
+.day1 .day-tag{background:linear-gradient(92deg,#2ea8ff,#22e3ee)}
+.day2 .day-tag{background:var(--grad-hot)}
+.day-tag .ic{width:14px;height:14px;stroke-width:2.2}
+.day-head h3{font-size:clamp(19px,3vw,27px)}
+.day-date{margin-left:auto;display:inline-flex;align-items:center;gap:7px;font-family:"IBM Plex Mono",monospace;font-size:12px;color:var(--muted);letter-spacing:.08em}
+
+.slot{display:grid;grid-template-columns:110px 1fr;gap:0 22px;border-bottom:1px solid var(--line-soft);transition:background .2s ease}
+.slot:hover{background:rgba(17,26,61,.55)}
+.slot .time{
+  font-family:"IBM Plex Mono",monospace;font-size:12.5px;color:var(--muted);
+  padding:24px 0 24px 16px;border-left:3px solid var(--line);line-height:1.55;
+  transition:border-color .2s ease,color .2s ease;
+}
+.day1 .slot:hover .time{border-left-color:var(--cyan);color:var(--cyan)}
+.day2 .slot:hover .time{border-left-color:var(--magenta);color:var(--magenta)}
+.slot .content{padding-block:24px}
+.slot h4{display:flex;align-items:center;gap:10px;font-family:"Archivo",sans-serif;font-stretch:112%;font-weight:700;font-size:19px;margin:0 0 10px;line-height:1.25;color:var(--ink)}
+.day1 .slot h4 .ic{color:var(--cyan)}
+.day2 .slot h4 .ic{color:var(--gold)}
+.slot ul{margin:0;padding-left:18px;color:var(--muted);font-size:15.5px;line-height:1.62}
+.slot ul li::marker{color:var(--magenta)}
+.day1 .slot ul li::marker{color:var(--cyan)}
+.slot.break{background:rgba(13,19,48,.7)}
+.slot.break .content{padding-block:14px;display:flex;align-items:center;gap:9px;font-family:"IBM Plex Mono",monospace;font-size:12px;letter-spacing:.16em;text-transform:uppercase;color:var(--muted)}
+.slot.break .time{padding-block:14px}
+.tools{margin-top:13px;display:flex;flex-wrap:wrap;gap:7px}
+.tool{
+  display:inline-flex;align-items:center;gap:6px;
+  font-family:"IBM Plex Mono",monospace;font-size:11px;letter-spacing:.06em;
+  padding:5px 11px;border-radius:999px;
+  border:1px solid var(--line);color:var(--cyan);background:rgba(34,227,238,.07);
+}
+.tool .ic{width:12px;height:12px;stroke-width:2}
+.day2 .tool{color:var(--gold);border-color:rgba(255,210,30,.4);background:rgba(255,210,30,.08)}
+
+/* ---------- trainer ---------- */
+.trainer{
+  display:grid;grid-template-columns:auto 1fr;gap:34px;
+  border:1px solid var(--line);border-radius:18px;
+  background:linear-gradient(140deg,rgba(23,34,82,.95),rgba(13,19,48,.95));
+  padding:36px;box-shadow:0 24px 60px rgba(4,7,25,.55);
+}
+.trainer-side{display:flex;flex-direction:column;gap:24px;align-items:flex-start;width:200px}
+.portrait{
+  position:relative;width:176px;height:176px;flex:none;
+  border-radius:20px;padding:3px;
+  background:linear-gradient(140deg,#2ea8ff,#ff3ea5 52%,#ffd21e);
+  box-shadow:0 18px 44px rgba(4,7,25,.6);
+}
+.portrait img{
+  display:block;width:100%;height:100%;max-width:100%;
+  object-fit:cover;object-position:center 18%;
+  border-radius:17px;
+}
+.portrait .verified{
+  position:absolute;right:-9px;bottom:-9px;
+  width:36px;height:36px;border-radius:50%;
+  display:grid;place-items:center;
+  background:#63e6a0;color:#062a1c;
+  border:3px solid #131c42;
+}
+.portrait .verified .ic{width:17px;height:17px;stroke-width:3.2}
+.stat .big{font-family:"Archivo",sans-serif;font-stretch:120%;font-weight:900;font-size:38px;line-height:1;
+  -webkit-background-clip:text;background-clip:text;color:transparent}
+.stat:nth-of-type(1) .big{background-image:linear-gradient(92deg,#2ea8ff,#22e3ee)}
+.stat:nth-of-type(2) .big{background-image:linear-gradient(92deg,#ffd21e,#ff7a3d)}
+.stat:nth-of-type(3) .big{background-image:linear-gradient(92deg,#ff3ea5,#a855f7)}
+.stat .cap{font-size:12.5px;color:var(--muted);margin-top:5px;font-family:"IBM Plex Mono",monospace;letter-spacing:.06em}
+.trainer h3{font-size:26px;margin-bottom:5px}
+.trainer .role{font-family:"IBM Plex Mono",monospace;font-size:12px;color:var(--cyan);letter-spacing:.06em;margin-bottom:16px}
+.trainer p{font-size:16px;color:var(--muted);margin-bottom:12px;max-width:60ch}
+.creds{display:flex;flex-wrap:wrap;gap:8px;margin-top:8px}
+.creds .tool{color:var(--lime);border-color:rgba(99,230,160,.4);background:rgba(99,230,160,.08)}
+
+/* ---------- audience + logistics ---------- */
+.two{display:grid;grid-template-columns:1fr 1fr;gap:20px}
+.panel{
+  border:1px solid var(--line);border-radius:16px;
+  background:linear-gradient(180deg,rgba(17,26,61,.9),rgba(13,19,48,.9));
+  padding:28px;position:relative;overflow:hidden;
+}
+.panel::before{content:"";position:absolute;inset:0 0 auto 0;height:4px}
+.panel:nth-child(1)::before{background:linear-gradient(90deg,#2ea8ff,#22e3ee)}
+.panel:nth-child(2)::before{background:linear-gradient(90deg,#ffd21e,#ff3ea5)}
+.panel h3{display:flex;align-items:center;gap:11px;font-size:20px;margin-bottom:16px}
+.panel:nth-child(1) h3 .ic{color:var(--cyan)}
+.panel:nth-child(2) h3 .ic{color:var(--gold)}
+.aud{list-style:none;margin:0;padding:0;display:flex;flex-direction:column;gap:11px}
+.aud li{display:flex;align-items:center;gap:11px;font-size:16px;color:#c3cbec}
+.aud li .ic{color:var(--blue);width:18px;height:18px}
+.dl{display:grid;grid-template-columns:auto 1fr;gap:12px 16px;font-size:16px;margin:0}
+.dl dt{display:flex;align-items:center;gap:8px;font-family:"IBM Plex Mono",monospace;font-size:10.5px;letter-spacing:.12em;text-transform:uppercase;color:var(--gold);padding-top:4px}
+.dl dt .ic{width:14px;height:14px}
+.dl dd{margin:0;color:#c3cbec}
+
+/* ---------- pricing ---------- */
+.pricing{display:grid;grid-template-columns:1fr 1fr;gap:20px;align-items:stretch}
+.price-card{
+  position:relative;display:flex;flex-direction:column;gap:14px;
+  border:1px solid var(--line);border-radius:18px;
+  background:linear-gradient(180deg,rgba(17,26,61,.92),rgba(13,19,48,.92));
+  padding:30px 28px 28px;
+}
+.price-card::before{content:"";position:absolute;inset:0 0 auto 0;height:4px;border-radius:18px 18px 0 0;background:var(--c)}
+.price-card.feature{
+  border-color:transparent;
+  background:
+    linear-gradient(180deg,rgba(28,22,10,.86),rgba(20,15,8,.92)) padding-box,
+    var(--grad-hot) border-box;
+  border:2px solid transparent;
+  box-shadow:0 26px 60px rgba(255,106,44,.22);
+}
+.price-card.feature::before{display:none}
+.price-tier{display:flex;align-items:center;gap:9px;font-family:"IBM Plex Mono",monospace;font-size:11px;letter-spacing:.16em;text-transform:uppercase;color:var(--c)}
+.price-amt{display:flex;align-items:baseline;gap:8px;flex-wrap:wrap}
+.price-amt .cur{font-family:"Archivo",sans-serif;font-stretch:112%;font-weight:700;font-size:21px;color:var(--muted)}
+.price-amt .num{
+  font-family:"Archivo",sans-serif;font-stretch:120%;font-weight:900;
+  font-size:clamp(44px,7vw,62px);line-height:1;letter-spacing:-.02em;
+  font-variant-numeric:tabular-nums;color:var(--ink);
+}
+.price-card.feature .price-amt .num{background:var(--grad-hot);-webkit-background-clip:text;background-clip:text;color:transparent}
+.price-amt .per{font-size:14px;color:var(--muted);font-family:"IBM Plex Mono",monospace}
+.price-was{font-family:"IBM Plex Mono",monospace;font-size:13px;color:var(--muted)}
+.price-was s{text-decoration-color:var(--magenta)}
+.price-list{list-style:none;margin:4px 0 0;padding:0;display:flex;flex-direction:column;gap:9px}
+.price-list li{display:flex;align-items:flex-start;gap:10px;font-size:15.5px;color:#c3cbec;line-height:1.5}
+.price-list .ic{color:var(--c);margin-top:4px;width:16px;height:16px;stroke-width:2.6}
+.price-card.feature .price-list .ic{color:var(--gold)}
+.save-flag{
+  position:absolute;top:-13px;right:22px;
+  display:inline-flex;align-items:center;gap:7px;
+  font-family:"IBM Plex Mono",monospace;font-size:11px;font-weight:600;letter-spacing:.12em;text-transform:uppercase;
+  padding:6px 13px;border-radius:999px;
+  background:var(--grad-hot);color:#1a0b16;
+  box-shadow:0 8px 24px rgba(255,62,165,.4);
+}
+.price-cta{margin-top:auto;padding-top:6px}
+.price-cta .btn{width:100%;justify-content:center}
+.price-note{
+  margin-top:18px;display:flex;align-items:flex-start;gap:11px;
+  border:1px solid var(--line);border-radius:14px;
+  background:rgba(34,227,238,.06);padding:16px 18px;
+  font-size:15px;color:#c3cbec;line-height:1.55;
+}
+.price-note .ic{color:var(--cyan);margin-top:3px}
+
+/* ---------- final cta ---------- */
+.cta-band{
+  border-radius:22px;padding:clamp(32px,5.5vw,56px);
+  text-align:center;display:flex;flex-direction:column;align-items:center;gap:18px;
+  position:relative;overflow:hidden;
+  background:
+    radial-gradient(700px 320px at 20% 0%, rgba(46,168,255,.35), transparent 65%),
+    radial-gradient(700px 340px at 85% 100%, rgba(255,62,165,.35), transparent 65%),
+    linear-gradient(150deg,#141f52,#0b1132);
+  border:1px solid var(--line);
+  box-shadow:0 30px 80px rgba(4,7,25,.65);
+}
+.cta-band h2{font-size:clamp(29px,5.2vw,48px)}
+.cta-band h2 .g{background:var(--grad-cool);-webkit-background-clip:text;background-clip:text;color:transparent;display:block}
+.cta-band p{color:#c3cbec;max-width:52ch;font-size:17px}
+.cta-strip{display:flex;flex-wrap:wrap;justify-content:center;gap:10px 22px;margin-top:2px}
+.cta-strip span{display:inline-flex;align-items:center;gap:8px;font-family:"IBM Plex Mono",monospace;font-size:12px;letter-spacing:.08em;color:var(--muted)}
+.cta-strip .ic{width:15px;height:15px;color:var(--lime)}
+
+footer{border-top:1px solid var(--line);margin-top:64px;padding-block:36px 46px;background:rgba(9,13,36,.85)}
+.foot-grid{display:flex;flex-wrap:wrap;gap:24px 46px;justify-content:space-between;align-items:flex-start}
+.foot-grid a{text-decoration:none;color:var(--muted);transition:color .15s ease;display:inline-flex;align-items:center;gap:9px}
+.foot-grid a:hover{color:var(--cyan)}
+.foot-col{display:flex;flex-direction:column;gap:8px;font-size:14.5px;color:var(--muted)}
+.foot-col strong{color:var(--ink);font-family:"Archivo",sans-serif;font-stretch:112%;font-size:15px;letter-spacing:.02em}
+.disclaimer{display:flex;gap:10px;align-items:flex-start;margin-top:26px;padding-top:18px;border-top:1px solid var(--line-soft);font-size:12.5px;color:var(--muted);font-family:"IBM Plex Mono",monospace;line-height:1.6}
+.disclaimer .ic{color:var(--gold);margin-top:3px}
+
+@media (prefers-reduced-motion: reduce){*{animation:none !important;transition:none !important}}
+@media (max-width:940px){
+
+  .hero-grid{grid-template-columns:1fr;gap:32px}
+  .gains{grid-template-columns:1fr 1fr}
+  .reel{grid-template-columns:1fr 1fr}
+}
+@media (max-width:880px){
+  .facts{grid-template-columns:1fr 1fr}
+  .outcomes{grid-template-columns:1fr}
+  .trainer{grid-template-columns:1fr;padding:26px}
+  .trainer-side{width:auto;flex-direction:row;flex-wrap:wrap;align-items:center;gap:24px}
+  .two{grid-template-columns:1fr}
+  .pricing{grid-template-columns:1fr}
+}
+@media (max-width:560px){
+  body{font-size:16px}
+  .facts{grid-template-columns:1fr}
+  .gains{grid-template-columns:1fr}
+  .reel{grid-template-columns:1fr}
+  .slot{grid-template-columns:1fr;gap:0}
+  .slot .time{padding:18px 0 0 16px}
+  .slot .content{padding-block:10px 22px;padding-left:16px}
+  .clip{font-size:0;gap:0}
+  .btn{width:100%;justify-content:center}
+  .topbar .btn{width:auto;padding:9px 14px}
+  .brand > span:last-child{display:none}
+  .logo-chip img{height:22px}
+  .day-date{margin-left:0;width:100%}
+  .portrait{width:132px;height:132px}
+}
+</style>
+
+<!-- icon sprite -->
+<svg width="0" height="0" style="position:absolute" aria-hidden="true" focusable="false">
+  <defs>
+    <symbol id="i-cal" viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="16" rx="2"/><path d="M3 10h18M8 3v4M16 3v4"/></symbol>
+    <symbol id="i-clock" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></symbol>
+    <symbol id="i-pin" viewBox="0 0 24 24"><path d="M12 21s7-5.6 7-11a7 7 0 1 0-14 0c0 5.4 7 11 7 11Z"/><circle cx="12" cy="10" r="2.6"/></symbol>
+    <symbol id="i-users" viewBox="0 0 24 24"><circle cx="9" cy="8" r="3.2"/><path d="M3 20a6 6 0 0 1 12 0M16.5 5.2a3.2 3.2 0 0 1 0 5.6M18 14.4a6 6 0 0 1 3 5.6"/></symbol>
+    <symbol id="i-clapper" viewBox="0 0 24 24"><path d="M3 9h18v10a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V9Z"/><path d="M3.4 9 21 6.6M3 6.2 20.6 3.8M8 8.4 6.6 4.7M13 7.7l-1.4-3.6M18 7l-1.4-3.6"/></symbol>
+    <symbol id="i-mega" viewBox="0 0 24 24"><path d="M4 9v6h3l8 4V5L7 9H4Z"/><path d="M18.5 8.5a5 5 0 0 1 0 7"/></symbol>
+    <symbol id="i-music" viewBox="0 0 24 24"><path d="M9 18V5l11-2v13"/><circle cx="6" cy="18" r="3"/><circle cx="17" cy="16" r="3"/></symbol>
+    <symbol id="i-grid" viewBox="0 0 24 24"><rect x="3" y="4" width="7.5" height="7" rx="1.2"/><rect x="13.5" y="4" width="7.5" height="7" rx="1.2"/><rect x="3" y="13" width="7.5" height="7" rx="1.2"/><rect x="13.5" y="13" width="7.5" height="7" rx="1.2"/></symbol>
+    <symbol id="i-spark" viewBox="0 0 24 24"><path d="M12 3.5 13.9 9l5.6 1.9-5.6 1.9L12 18.4 10.1 12.8 4.5 10.9 10.1 9 12 3.5Z"/><path d="M18.6 3v3.4M20.3 4.7h-3.4M5.4 17v3M7.1 18.5h-3.4"/></symbol>
+    <symbol id="i-monitor" viewBox="0 0 24 24"><rect x="2.5" y="4" width="19" height="12.5" rx="2"/><path d="M9 20.5h6M12 16.5v4"/><path d="m10.6 8.4 4 2-4 2v-4Z"/></symbol>
+    <symbol id="i-play" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="m10.2 8.3 5.3 3.7-5.3 3.7V8.3Z"/></symbol>
+    <symbol id="i-check" viewBox="0 0 24 24"><path d="m5 12.6 4.6 4.6L19 6.8"/></symbol>
+    <symbol id="i-arrow" viewBox="0 0 24 24"><path d="M4 12h15M13 6l6 6-6 6"/></symbol>
+    <symbol id="i-bulb" viewBox="0 0 24 24"><path d="M9.2 17.5a6.5 6.5 0 1 1 5.6 0v2a1.5 1.5 0 0 1-1.5 1.5h-2.6a1.5 1.5 0 0 1-1.5-1.5v-2Z"/><path d="M9.4 17.6h5.2"/></symbol>
+    <symbol id="i-pen" viewBox="0 0 24 24"><path d="M15.5 4.6 19.4 8.5 8.9 19H5v-3.9L15.5 4.6Z"/><path d="m13.6 6.5 3.9 3.9"/></symbol>
+    <symbol id="i-avatar" viewBox="0 0 24 24"><circle cx="12" cy="8.5" r="3.6"/><path d="M5 20a7 7 0 0 1 14 0"/><path d="M3 9.5v-3M21 9.5v-3"/></symbol>
+    <symbol id="i-rocket" viewBox="0 0 24 24"><path d="M13.5 4.5c3.6-1.4 6 1 4.6 4.6-1 2.6-3.3 5.2-6.4 7l-3.8-3.8c1.8-3.1 4.4-5.4 7-6.4Z"/><path d="M8 12.4 5 13.6 4 19l5.4-1 1.2-3"/><circle cx="14.6" cy="9.4" r="1.4"/></symbol>
+    <symbol id="i-cup" viewBox="0 0 24 24"><path d="M4 8h13v6a5 5 0 0 1-5 5H9a5 5 0 0 1-5-5V8Z"/><path d="M17 9.5h1.8a2.2 2.2 0 0 1 0 4.4H17"/><path d="M7 3.5v2M11 3.5v2"/></symbol>
+    <symbol id="i-phone" viewBox="0 0 24 24"><path d="M6.5 3.5h3l1.6 4-2 1.5a12 12 0 0 0 5.9 5.9l1.5-2 4 1.6v3a2 2 0 0 1-2.2 2C12 19 5 12 4.5 5.7a2 2 0 0 1 2-2.2Z"/></symbol>
+    <symbol id="i-mail" viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3.5 6.5 8.5 6.2 8.5-6.2"/></symbol>
+    <symbol id="i-globe" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M3.2 12h17.6M12 3a15 15 0 0 1 0 18 15 15 0 0 1 0-18Z"/></symbol>
+    <symbol id="i-link" viewBox="0 0 24 24"><path d="M10.5 13.5a4 4 0 0 0 5.7 0l2.6-2.6a4 4 0 0 0-5.7-5.7L11.6 6.7"/><path d="M13.5 10.5a4 4 0 0 0-5.7 0l-2.6 2.6a4 4 0 1 0 5.7 5.7l1.4-1.5"/></symbol>
+    <symbol id="i-info" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M12 11v5M12 7.8v.4"/></symbol>
+    <symbol id="i-laptop" viewBox="0 0 24 24"><rect x="4" y="5" width="16" height="11" rx="1.8"/><path d="M2.5 19h19"/></symbol>
+    <symbol id="i-target" viewBox="0 0 24 24"><circle cx="12" cy="12" r="8.5"/><circle cx="12" cy="12" r="4.6"/><circle cx="12" cy="12" r="1"/></symbol>
+    <symbol id="i-cam" viewBox="0 0 24 24"><rect x="2.5" y="7" width="13" height="10" rx="2"/><path d="m15.5 11 6-3v8l-6-3z"/></symbol>
+    <symbol id="i-layers" viewBox="0 0 24 24"><path d="m12 3 9 5-9 5-9-5 9-5Z"/><path d="m3 13 9 5 9-5"/></symbol>
+    <symbol id="i-wand" viewBox="0 0 24 24"><path d="M5 19 16.5 7.5"/><path d="m15 4 1.2 2.8L19 8l-2.8 1.2L15 12l-1.2-2.8L11 8l2.8-1.2L15 4Z"/><path d="M6 4.5v2.2M7.1 5.6H4.9"/></symbol>
+    <symbol id="i-tag" viewBox="0 0 24 24"><path d="M11.6 3H20a1 1 0 0 1 1 1v8.4a2 2 0 0 1-.6 1.4l-7 7a2 2 0 0 1-2.8 0l-6.4-6.4a2 2 0 0 1 0-2.8l7-7A2 2 0 0 1 11.6 3Z"/><circle cx="16.4" cy="7.6" r="1.6"/></symbol>
+    <symbol id="i-badge" viewBox="0 0 24 24"><path d="m12 2.6 2.6 1.9 3.2-.1 1 3 2.6 1.8-1 3 1 3-2.6 1.8-1 3-3.2-.1L12 21.4l-2.6-1.9-3.2.1-1-3L2.6 14.8l1-3-1-3 2.6-1.8 1-3 3.2.1L12 2.6Z"/><path d="m8.8 12.2 2.2 2.2 4.2-4.6"/></symbol>
+    <symbol id="i-chart" viewBox="0 0 24 24"><path d="M4 20V4M4 20h16"/><path d="M8 20v-6M12.6 20v-10M17.2 20v-14"/></symbol>
+    <symbol id="i-seat" viewBox="0 0 24 24"><path d="M6 4v9h12V4"/><path d="M4 13h16l-2 7H6l-2-7Z"/><path d="M9 20v1.5M15 20v1.5"/></symbol>
+  </defs>
+</svg>
+
+<div class="topbar">
+  <div class="wrap topbar-in">
+    <div class="brand">
+      <span class="logo-chip"><img src="dac-logo.png" alt="D Action Consultancy — Firing Up Growth"></span>
+      <span class="rec" aria-hidden="true"></span>
+      <span>D Action Consultancy</span>
+    </div>
+    <a class="btn" href="https://forms.gle/3udHDwkBLWH8DkLE7" target="_blank" rel="noopener">Register now <svg class="ic ic-sm"><use href="#i-arrow"/></svg></a>
+  </div>
+</div>
+
+<div class="wrap">
+
+  <header class="hero">
+    <figure class="cover">
+      <img src="cover.png" width="1664" height="936"
+           alt="AI-Powered Video Creation Mastery — beginner-friendly 2-day hands-on workshop with coach David Hooi, shown with AI-generated film frames and a video editing timeline.">
+    </figure>
+
+    <div class="hero-grid">
+      <div class="hero-copy">
+        <p class="eyebrow">Empowering People. Elevating Performance. AI in Action.</p>
+        <h1>AI-Powered<span class="l2">Video Creation</span><span class="l3">Mastery</span></h1>
+
+        <div class="badges">
+          <span class="badge hi"><svg class="ic ic-sm"><use href="#i-bulb"/></svg>Beginner friendly</span>
+          <span class="badge"><svg class="ic ic-sm"><use href="#i-clapper"/></svg>2-day hands-on workshop</span>
+          <span class="badge"><svg class="ic ic-sm"><use href="#i-users"/></svg>In-house for your team</span>
+          <span class="badge hi"><svg class="ic ic-sm"><use href="#i-badge"/></svg>HRD Corp claimable</span>
+        </div>
+
+        <p class="lede">A 2-day in-house workshop that turns your marketing, communications and L&amp;D teams into AI video producers — ads, product demos, training clips and social content made in hours instead of outsourced for weeks. Every participant finishes with a video they produced themselves.</p>
+
+        <div class="hero-cta">
+          <a class="btn" href="mailto:david@daction.com?subject=AI-Powered%20Video%20Creation%20Mastery%20%E2%80%94%20in-house%20proposal&amp;body=Hi%20David%2C%0A%0AWe%27d%20like%20a%20proposal%20for%20the%20AI-Powered%20Video%20Creation%20Mastery%20workshop.%0A%0ACompany%3A%0ADepartment%2Fteam%3A%0AApprox.%20number%20of%20participants%3A%0APreferred%20timing%3A%0A%0AThank%20you.">Request a proposal <svg class="ic ic-sm"><use href="#i-arrow"/></svg></a>
+          <a class="btn btn-ghost" href="#showreel"><svg class="ic ic-sm"><use href="#i-play"/></svg> Watch sample videos</a>
+        </div>
+        <p class="seat-note" style="margin-top:18px"><svg class="ic ic-sm"><use href="#i-badge"/></svg> HRD Corp claimable — fund it from your levy <span class="dot">·</span> <a href="#agenda" class="inline-link">See the full agenda</a></p>
+      </div>
+
+      <aside class="glance">
+        <p class="glance-head"><svg class="ic ic-sm"><use href="#i-info"/></svg>At a glance</p>
+        <dl class="glance-list">
+          <div class="g-row" style="--c:#2ea8ff">
+            <span class="ic-box"><svg class="ic"><use href="#i-cal"/></svg></span>
+            <dt>Duration</dt>
+            <dd>2 full days<span>Saturday &amp; Sunday format</span></dd>
+          </div>
+          <div class="g-row" style="--c:#22e3ee">
+            <span class="ic-box"><svg class="ic"><use href="#i-clock"/></svg></span>
+            <dt>Time</dt>
+            <dd>9:00 AM – 5:00 PM<span>Both days, with a lunch break</span></dd>
+          </div>
+          <div class="g-row" style="--c:#63e6a0">
+            <span class="ic-box"><svg class="ic"><use href="#i-pin"/></svg></span>
+            <dt>Delivery</dt>
+            <dd>In-house at your office<span>Or at our training venue in Klang Valley</span></dd>
+          </div>
+          <div class="g-row" style="--c:#a855f7">
+            <span class="ic-box"><svg class="ic"><use href="#i-users"/></svg></span>
+            <dt>Group size</dt>
+            <dd>Ideal 15–25 pax<span>Hands-on lab — one laptop per participant</span></dd>
+          </div>
+          <div class="g-row fee" style="--c:#ffd21e">
+            <span class="ic-box"><svg class="ic"><use href="#i-badge"/></svg></span>
+            <dt>Funding</dt>
+            <dd><strong>HRD Corp claimable</strong><span>Available as a public or in-house run</span></dd>
+          </div>
+        </dl>
+        <a class="btn glance-btn" href="https://forms.gle/3udHDwkBLWH8DkLE7" target="_blank" rel="noopener">Register your interest <svg class="ic ic-sm"><use href="#i-arrow"/></svg></a>
+      </aside>
+    </div>
+
+    <div class="scrub" aria-hidden="true">
+      <div class="scrub-track">
+        <div class="clip"><svg class="ic"><use href="#i-bulb"/></svg>Idea</div>
+        <div class="clip"><svg class="ic"><use href="#i-pen"/></svg>Prompt</div>
+        <div class="clip"><svg class="ic"><use href="#i-cam"/></svg>Generate</div>
+        <div class="clip"><svg class="ic"><use href="#i-layers"/></svg>Edit</div>
+        <div class="clip"><svg class="ic"><use href="#i-rocket"/></svg>Share</div>
+        <div class="clip"><svg class="ic"><use href="#i-chart"/></svg>Grow</div>
+      </div>
+      <div class="scrub-legend"><span>Day 1 · 09:00</span><span>End-to-end production workflow</span><span>Day 2 · 17:00</span></div>
+    </div>
+  </header>
+
+
+  <section id="overview">
+    <div class="sec-head"><span class="ic-box"><svg class="ic ic-lg"><use href="#i-info"/></svg></span><p class="eyebrow">Programme overview</p><span class="rule"></span></div>
+    <p class="body-col">Most companies still outsource every piece of video they publish — and wait weeks, and pay per revision. This workshop moves that capability <strong>inside your team</strong>. In two days your people learn to produce professional visual and video content with AI: advertisement videos, product and service promos, cinematic storytelling, music-video styles and AI avatar presenters.</p>
+    <p class="body-col">Participants learn structured prompting and repeatable production workflows that apply directly to marketing, training, branding, social media and corporate communication. Every module is demonstrated, then practised, then reviewed — so the team leaves with work they actually made, not notes about it.</p>
+    <p class="body-col">Where it helps, we tailor the practice briefs to your industry and brand, so the videos produced on day two are assets you can genuinely use.</p>
+
+    <div class="two" style="margin-top:34px">
+      <div class="panel">
+        <h3><svg class="ic ic-lg"><use href="#i-rocket"/></svg>Why companies run this</h3>
+        <ul class="aud">
+          <li><svg class="ic"><use href="#i-check"/></svg>Cut turnaround on campaign and product video from weeks to days</li>
+          <li><svg class="ic"><use href="#i-check"/></svg>Reduce spend on outsourced production and stock footage</li>
+          <li><svg class="ic"><use href="#i-check"/></svg>Publish more consistently across social and internal channels</li>
+          <li><svg class="ic"><use href="#i-check"/></svg>Build training and onboarding videos without a studio</li>
+          <li><svg class="ic"><use href="#i-check"/></svg>Give the team a practical, confident first win with AI</li>
+        </ul>
+      </div>
+      <div class="panel">
+        <h3><svg class="ic ic-lg"><use href="#i-users"/></svg>How we deliver it</h3>
+        <dl class="dl">
+          <dt><svg class="ic"><use href="#i-pin"/></svg>Where</dt><dd>At your office, or our training venue in the Klang Valley</dd>
+          <dt><svg class="ic"><use href="#i-users"/></svg>Group</dt><dd>Ideal 15–25 participants, one laptop each</dd>
+          <dt><svg class="ic"><use href="#i-cal"/></svg>When</dt><dd>Dates arranged around your team — weekday or weekend</dd>
+          <dt><svg class="ic"><use href="#i-wand"/></svg>Tailoring</dt><dd>Practice briefs built around your products and brand</dd>
+          <dt><svg class="ic"><use href="#i-badge"/></svg>Funding</dt><dd>HRD Corp claimable for registered employers</dd>
+        </dl>
+      </div>
+    </div>
+  </section>
+
+  <section id="gains">
+    <div class="sec-head"><span class="ic-box"><svg class="ic ic-lg"><use href="#i-bulb"/></svg></span><h2>What you'll gain</h2><span class="rule"></span></div>
+    <div class="gains">
+
+      <div class="gain" style="--c:#2ea8ff">
+        <svg class="gain-art" viewBox="0 0 320 168" aria-hidden="true">
+          <defs><linearGradient id="g1" x1="0" y1="0" x2="0" y2="1"><stop offset="0%" stop-color="#0b1d5c"/><stop offset="60%" stop-color="#2c3ea8"/><stop offset="100%" stop-color="#7b3fd0"/></linearGradient></defs>
+          <rect width="320" height="168" fill="url(#g1)"/>
+          <circle cx="232" cy="52" r="30" fill="#cfe6ff" opacity=".9"/><circle cx="222" cy="44" r="6" fill="#a9c8f0" opacity=".8"/><circle cx="240" cy="62" r="4" fill="#a9c8f0" opacity=".8"/>
+          <g fill="#ffffff"><circle cx="40" cy="30" r="1.6"/><circle cx="88" cy="18" r="1.2"/><circle cx="140" cy="38" r="1.4"/><circle cx="190" cy="22" r="1.2"/><circle cx="286" cy="34" r="1.5"/><circle cx="64" cy="58" r="1.1"/></g>
+          <path d="M0 168 62 106l46 30 52-44 66 48 94-36v64H0Z" fill="#090f2e"/>
+          <path d="M0 168 96 128l58 26 74-34 92 30v18H0Z" fill="#05081c"/>
+          <g fill="#04061a"><circle cx="152" cy="118" r="7"/><path d="M145 126h14l5 26h-9l-3-13-3 13h-9l5-26Z"/></g>
+          <path d="M152 111v-6" stroke="#22e3ee" stroke-width="2"/>
+        </svg>
+        <div class="gain-body">
+          <span class="n mono"><svg class="ic ic-sm"><use href="#i-clapper"/></svg>Short film</span>
+          <h3>Create AI short films</h3>
+          <p>Build a scene, direct the camera, and sequence shots into a cinematic piece that holds together.</p>
+        </div>
+      </div>
+
+      <div class="gain" style="--c:#22e3ee">
+        <svg class="gain-art" viewBox="0 0 320 168" aria-hidden="true">
+          <defs><linearGradient id="g2" x1="0" y1="0" x2="1" y2="1"><stop offset="0%" stop-color="#062a4e"/><stop offset="100%" stop-color="#0b6c86"/></linearGradient></defs>
+          <rect width="320" height="168" fill="url(#g2)"/>
+          <path d="M160 0 96 168h128L160 0Z" fill="#22e3ee" opacity=".16"/>
+          <ellipse cx="160" cy="140" rx="74" ry="14" fill="#04202f"/>
+          <rect x="112" y="128" width="96" height="14" rx="4" fill="#0a3d52"/>
+          <path d="M118 128c14-30 34-46 42-46s28 16 42 46H118Z" fill="#22e3ee"/>
+          <path d="M126 126c12-24 28-38 34-38v38h-34Z" fill="#7defff"/>
+          <rect x="228" y="34" width="66" height="44" rx="6" fill="#0a3d52" stroke="#22e3ee"/>
+          <rect x="236" y="44" width="42" height="5" rx="2.5" fill="#22e3ee"/>
+          <rect x="236" y="54" width="50" height="5" rx="2.5" fill="#1f7f96"/>
+          <rect x="236" y="64" width="32" height="5" rx="2.5" fill="#1f7f96"/>
+          <path d="M26 42v20h12l20 12V30L38 42H26Z" fill="#ffd21e"/>
+          <path d="M66 40a12 12 0 0 1 0 24" fill="none" stroke="#ffd21e" stroke-width="3" stroke-linecap="round"/>
+        </svg>
+        <div class="gain-body">
+          <span class="n mono"><svg class="ic ic-sm"><use href="#i-mega"/></svg>Commercial</span>
+          <h3>Produce ads and promos</h3>
+          <p>Turn a product or service into an engaging commercial with a storyline, branding and a clear message.</p>
+        </div>
+      </div>
+
+      <div class="gain" style="--c:#ff3ea5">
+        <svg class="gain-art" viewBox="0 0 320 168" aria-hidden="true">
+          <defs><linearGradient id="g3" x1="0" y1="0" x2="0" y2="1"><stop offset="0%" stop-color="#3b0a52"/><stop offset="100%" stop-color="#a11367"/></linearGradient></defs>
+          <rect width="320" height="168" fill="url(#g3)"/>
+          <path d="M40 0 92 168H60L18 0h22ZM120 0l26 168h-26L96 0h24ZM280 0 228 168h32L302 0h-22Z" fill="#ff8ac4" opacity=".16"/>
+          <g fill="#ff3ea5" opacity=".85"><rect x="20" y="118" width="9" height="34" rx="3"/><rect x="36" y="100" width="9" height="52" rx="3"/><rect x="52" y="126" width="9" height="26" rx="3"/><rect x="272" y="108" width="9" height="44" rx="3"/><rect x="288" y="124" width="9" height="28" rx="3"/><rect x="256" y="132" width="9" height="20" rx="3"/></g>
+          <g fill="#1a0526">
+            <circle cx="164" cy="52" r="13"/>
+            <path d="M152 68h24l10 40-14 4-4-20-6 44h-14l-6-44-4 20-14-4 10-40Z"/>
+            <rect x="120" y="150" width="88" height="6" rx="3"/>
+          </g>
+          <path d="M118 104 196 76" stroke="#1a0526" stroke-width="7" stroke-linecap="round"/>
+          <ellipse cx="124" cy="106" rx="16" ry="11" transform="rotate(-20 124 106)" fill="#ffd21e"/>
+          <path d="M204 60v22" stroke="#ffd21e" stroke-width="4" stroke-linecap="round"/>
+          <circle cx="200" cy="84" r="6" fill="#ffd21e"/>
+        </svg>
+        <div class="gain-body">
+          <span class="n mono"><svg class="ic ic-sm"><use href="#i-music"/></svg>Music video</span>
+          <h3>Create music videos with AI</h3>
+          <p>Match visuals to mood and beat, sequence emotional storytelling, and finish an MV-style edit.</p>
+        </div>
+      </div>
+
+      <div class="gain" style="--c:#63e6a0">
+        <svg class="gain-art" viewBox="0 0 320 168" aria-hidden="true">
+          <defs><linearGradient id="g4" x1="0" y1="0" x2="1" y2="1"><stop offset="0%" stop-color="#062e2a"/><stop offset="100%" stop-color="#0d5f4a"/></linearGradient></defs>
+          <rect width="320" height="168" fill="url(#g4)"/>
+          <g stroke="#63e6a0" fill="#06231f" stroke-width="1.6">
+            <rect x="22" y="26" width="80" height="50" rx="5"/><rect x="120" y="26" width="80" height="50" rx="5"/><rect x="218" y="26" width="80" height="50" rx="5"/>
+            <rect x="22" y="94" width="80" height="50" rx="5"/><rect x="120" y="94" width="80" height="50" rx="5"/><rect x="218" y="94" width="80" height="50" rx="5"/>
+          </g>
+          <circle cx="48" cy="46" r="9" fill="#ffd21e"/><path d="M22 76 46 58l20 12 16-10 20 16H22Z" fill="#0b4a3c"/>
+          <path d="M148 40h24v26h-24z" fill="#63e6a0" opacity=".55"/><path d="M134 66h52" stroke="#63e6a0" stroke-width="2"/>
+          <circle cx="258" cy="44" r="10" fill="#22e3ee" opacity=".7"/><path d="M232 66h52" stroke="#63e6a0" stroke-width="2"/>
+          <path d="M40 130h44M40 118h30" stroke="#63e6a0" stroke-width="2.4" stroke-linecap="round"/>
+          <path d="M140 108h40v24h-40z" fill="#63e6a0" opacity=".35"/>
+          <path d="M238 132l16-18 12 12 10-8" stroke="#ffd21e" stroke-width="2.6" fill="none" stroke-linecap="round"/>
+          <path d="M104 51h14M202 51h14M104 119h14M202 119h14" stroke="#63e6a0" stroke-width="2" stroke-linecap="round"/>
+        </svg>
+        <div class="gain-body">
+          <span class="n mono"><svg class="ic ic-sm"><use href="#i-grid"/></svg>Pre-production</span>
+          <h3>Ideas into storyboards</h3>
+          <p>Move from a rough idea to scenes, storyboards and a shot list before a single frame is generated.</p>
+        </div>
+      </div>
+
+      <div class="gain" style="--c:#ffd21e">
+        <svg class="gain-art" viewBox="0 0 320 168" aria-hidden="true">
+          <defs><linearGradient id="g5" x1="0" y1="0" x2="1" y2="1"><stop offset="0%" stop-color="#3a2a04"/><stop offset="100%" stop-color="#7a4a0b"/></linearGradient></defs>
+          <rect width="320" height="168" fill="url(#g5)"/>
+          <rect x="46" y="30" width="60" height="60" rx="14" fill="#0d1330" stroke="#ffd21e" stroke-width="1.6"/>
+          <circle cx="76" cy="60" r="16" fill="none" stroke="#ffd21e" stroke-width="3"/><path d="M76 44v32" stroke="#ffd21e" stroke-width="3"/>
+          <rect x="130" y="52" width="60" height="60" rx="14" fill="#0d1330" stroke="#22e3ee" stroke-width="1.6"/>
+          <path d="M148 94c8-26 16-34 24-34s10 10 6 18-14 6-18 16" fill="none" stroke="#22e3ee" stroke-width="3" stroke-linecap="round"/>
+          <rect x="214" y="30" width="60" height="60" rx="14" fill="#0d1330" stroke="#ff3ea5" stroke-width="1.6"/>
+          <path d="m232 72 14-24 10 16 6-8 10 16h-40Z" fill="#ff3ea5"/><circle cx="256" cy="46" r="5" fill="#ff3ea5"/>
+          <rect x="88" y="120" width="60" height="34" rx="10" fill="#0d1330" stroke="#63e6a0" stroke-width="1.6"/>
+          <path d="M104 137h28M118 128v18" stroke="#63e6a0" stroke-width="3" stroke-linecap="round"/>
+          <rect x="172" y="120" width="60" height="34" rx="10" fill="#0d1330" stroke="#a855f7" stroke-width="1.6"/>
+          <path d="m192 130 16 7-16 7v-14Z" fill="#a855f7"/>
+          <path d="m258 118 6 14 14 6-14 6-6 14-6-14-14-6 14-6 6-14Z" fill="#ffd21e"/>
+        </svg>
+        <div class="gain-body">
+          <span class="n mono"><svg class="ic ic-sm"><use href="#i-spark"/></svg>Toolkit</span>
+          <h3>Beginner-friendly AI tools</h3>
+          <p>Work confidently across Dreamina, OpenArt, ChatGPT Image 2.5, Seedance 2.5, Minimax H3 and avatar platforms.</p>
+        </div>
+      </div>
+
+      <div class="gain" style="--c:#a855f7">
+        <svg class="gain-art" viewBox="0 0 320 168" aria-hidden="true">
+          <defs><linearGradient id="g6" x1="0" y1="0" x2="1" y2="1"><stop offset="0%" stop-color="#2a0f57"/><stop offset="100%" stop-color="#6a1fa8"/></linearGradient></defs>
+          <rect width="320" height="168" fill="url(#g6)"/>
+          <ellipse cx="160" cy="150" rx="120" ry="18" fill="#1a0838"/>
+          <rect x="84" y="34" width="152" height="90" rx="8" fill="#0d1330" stroke="#a855f7" stroke-width="1.8"/>
+          <rect x="94" y="44" width="132" height="70" rx="4" fill="#150a33"/>
+          <circle cx="160" cy="79" r="22" fill="none" stroke="#22e3ee" stroke-width="2.6"/>
+          <path d="m153 69 16 10-16 10V69Z" fill="#22e3ee"/>
+          <rect x="140" y="124" width="40" height="10" fill="#0d1330"/><rect x="118" y="134" width="84" height="7" rx="3.5" fill="#0d1330"/>
+          <g fill="#1a0838"><circle cx="160" cy="150" r="0"/></g>
+          <circle cx="56" cy="96" r="15" fill="#2a0f57" stroke="#ff3ea5" stroke-width="2"/>
+          <path d="M42 130a14 14 0 0 1 28 0Z" fill="#2a0f57" stroke="#ff3ea5" stroke-width="2"/>
+          <circle cx="266" cy="96" r="15" fill="#2a0f57" stroke="#ffd21e" stroke-width="2"/>
+          <path d="M252 130a14 14 0 0 1 28 0Z" fill="#2a0f57" stroke="#ffd21e" stroke-width="2"/>
+          <path d="m40 34 4 10 10 4-10 4-4 10-4-10-10-4 10-4 4-10Z" fill="#ffd21e"/>
+          <path d="m284 26 3 8 8 3-8 3-3 8-3-8-8-3 8-3 3-8Z" fill="#22e3ee"/>
+        </svg>
+        <div class="gain-body">
+          <span class="n mono"><svg class="ic ic-sm"><use href="#i-monitor"/></svg>Practice</span>
+          <h3>Your own video, finished</h3>
+          <p>Spend the final afternoon producing your own video with your coach guiding you through it.</p>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <section id="showreel">
+    <div class="sec-head"><span class="ic-box"><svg class="ic ic-lg"><use href="#i-play"/></svg></span><h2>See what AI video can do</h2><span class="rule"></span></div>
+    <p class="body-col" style="margin-bottom:26px">Three finished pieces made with the same AI tools and workflows you'll learn in this workshop — an advertisement, a music video, and a short film.</p>
+
+    <div class="reel">
+
+      <a class="reel-card" style="--c:#22e3ee" href="https://www.facebook.com/share/r/1BaASCv1mp/" target="_blank" rel="noopener">
+        <div class="reel-art">
+          <img src="thumb-ad.jpg" alt="Still from the AI-generated advertisement: a father and daughter sharing a meal at a restaurant table." loading="lazy">
+          <span class="reel-plat"><svg class="ic ic-sm"><use href="#i-globe"/></svg>Facebook</span>
+          <div class="reel-play"><i><svg viewBox="0 0 24 24"><path d="m8 5.5 12 6.5-12 6.5v-13Z"/></svg></i></div>
+        </div>
+        <div class="reel-body">
+          <span class="n mono"><svg class="ic ic-sm"><use href="#i-mega"/></svg>Advertisement</span>
+          <h3>AI-generated ad video</h3>
+          <p>A commercial built end to end with AI — storyline, visuals, branding and messaging.</p>
+          <span class="go">Watch on Facebook <svg class="ic ic-sm"><use href="#i-arrow"/></svg></span>
+        </div>
+      </a>
+
+      <a class="reel-card" style="--c:#ff3ea5" href="https://youtu.be/3dsQfit1Cvo" target="_blank" rel="noopener">
+        <div class="reel-art">
+          <img src="thumb-mv.jpg" alt="Still from the AI-generated music video: five singers in traditional and modern gowns before a city skyline at dusk." loading="lazy">
+          <span class="reel-plat"><svg class="ic ic-sm"><use href="#i-play"/></svg>YouTube</span>
+          <div class="reel-play"><i><svg viewBox="0 0 24 24"><path d="m8 5.5 12 6.5-12 6.5v-13Z"/></svg></i></div>
+        </div>
+        <div class="reel-body">
+          <span class="n mono"><svg class="ic ic-sm"><use href="#i-music"/></svg>Music video</span>
+          <h3>AI music video (MV)</h3>
+          <p>Visuals sequenced to mood and beat, with cinematic scene transitions throughout.</p>
+          <span class="go">Watch on YouTube <svg class="ic ic-sm"><use href="#i-arrow"/></svg></span>
+        </div>
+      </a>
+
+      <a class="reel-card" style="--c:#2ea8ff" href="https://youtu.be/ygypRHphRtY" target="_blank" rel="noopener">
+        <div class="reel-art">
+          <img src="thumb-shortfilm.jpg" alt="Still from the AI-generated short film: a family and children gathered under a large tree at sunset." loading="lazy">
+          <span class="reel-plat"><svg class="ic ic-sm"><use href="#i-play"/></svg>YouTube</span>
+          <div class="reel-play"><i><svg viewBox="0 0 24 24"><path d="m8 5.5 12 6.5-12 6.5v-13Z"/></svg></i></div>
+        </div>
+        <div class="reel-body">
+          <span class="n mono"><svg class="ic ic-sm"><use href="#i-clapper"/></svg>Short film</span>
+          <h3>AI cinematic short film</h3>
+          <p>A story told in scenes — storyboarded, generated shot by shot, then edited together.</p>
+          <span class="go">Watch on YouTube <svg class="ic ic-sm"><use href="#i-arrow"/></svg></span>
+        </div>
+      </a>
+
+    </div>
+    <p class="reel-note"><svg class="ic ic-sm"><use href="#i-info"/></svg><span>Each link opens the full video on Facebook or YouTube. These are the three formats you'll practise across the two days.</span></p>
+  </section>
+
+  <section id="outcomes">
+    <div class="sec-head"><span class="ic-box"><svg class="ic ic-lg"><use href="#i-target"/></svg></span><h2>By the end, you will be able to</h2><span class="rule"></span></div>
+    <ul class="outcomes">
+      <li><span class="tick" style="background:#2ea8ff"><svg class="ic"><use href="#i-check"/></svg></span>Understand how generative AI creates images and videos</li>
+      <li><span class="tick" style="background:#22e3ee"><svg class="ic"><use href="#i-check"/></svg></span>Write effective prompts that control your visual output</li>
+      <li><span class="tick" style="background:#63e6a0"><svg class="ic"><use href="#i-check"/></svg></span>Generate professional-quality images using AI tools</li>
+      <li><span class="tick" style="background:#ffd21e"><svg class="ic"><use href="#i-check"/></svg></span>Create AI videos in advertisement and music-video styles</li>
+      <li><span class="tick" style="background:#ff7a3d"><svg class="ic"><use href="#i-check"/></svg></span>Produce AI talking avatar videos for business use</li>
+      <li><span class="tick" style="background:#ff3ea5"><svg class="ic"><use href="#i-check"/></svg></span>Run an end-to-end AI video production workflow on your own</li>
+    </ul>
+  </section>
+
+  <section id="agenda">
+    <div class="sec-head"><span class="ic-box"><svg class="ic ic-lg"><use href="#i-layers"/></svg></span><h2>The two days, hour by hour</h2><span class="rule"></span></div>
+
+    <div class="day day1">
+      <div class="day-head">
+        <span class="day-tag"><svg class="ic"><use href="#i-wand"/></svg>Day 1</span>
+        <h3>Foundations &amp; AI Image Creation</h3>
+        <span class="day-date mono"><svg class="ic ic-sm"><use href="#i-clock"/></svg>9:00 AM – 5:00 PM</span>
+      </div>
+
+      <div class="slot">
+        <div class="time">09:00<br>10:30</div>
+        <div class="content">
+          <h4><svg class="ic"><use href="#i-info"/></svg>Module 1 — Introduction to AI Visual Creation</h4>
+          <ul>
+            <li>Overview of generative AI for visual content</li>
+            <li>How AI actually creates images and videos</li>
+            <li>The AI visual workflow, from idea to output</li>
+            <li>Business applications of AI visuals</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="slot">
+        <div class="time">10:45<br>12:30</div>
+        <div class="content">
+          <h4><svg class="ic"><use href="#i-pen"/></svg>Module 2 — Prompt Engineering for Visual Creation</h4>
+          <ul>
+            <li>The structure of an effective AI prompt</li>
+            <li>Prompt frameworks that keep output consistent</li>
+            <li>Controlling style, lighting and composition</li>
+            <li>Writing prompts for real business scenarios</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="slot break">
+        <div class="time">12:30</div>
+        <div class="content"><svg class="ic ic-sm"><use href="#i-cup"/></svg>Lunch break</div>
+      </div>
+
+      <div class="slot">
+        <div class="time">13:30<br>15:00</div>
+        <div class="content">
+          <h4><svg class="ic"><use href="#i-wand"/></svg>Module 3 — AI Image Creation Techniques</h4>
+          <ul>
+            <li>Generating professional visuals with Dreamina and OpenArt</li>
+            <li>Creating brand-consistent images</li>
+            <li>Image refinement and enhancement</li>
+            <li>Visual storytelling with AI images</li>
+          </ul>
+          <div class="tools">
+            <span class="tool"><svg class="ic"><use href="#i-spark"/></svg>Dreamina</span>
+            <span class="tool"><svg class="ic"><use href="#i-spark"/></svg>OpenArt</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="slot">
+        <div class="time">15:15<br>17:00</div>
+        <div class="content">
+          <h4><svg class="ic"><use href="#i-grid"/></svg>Module 4 — Visual Storyboarding for Video</h4>
+          <ul>
+            <li>Principles of visual storytelling</li>
+            <li>Planning video scenes and storyboards</li>
+            <li>Creating cinematic sequences</li>
+            <li>Preparing your assets for AI video production</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <div class="day day2">
+      <div class="day-head">
+        <span class="day-tag"><svg class="ic"><use href="#i-cam"/></svg>Day 2</span>
+        <h3>AI Video Creation &amp; Production</h3>
+        <span class="day-date mono"><svg class="ic ic-sm"><use href="#i-clock"/></svg>9:00 AM – 5:00 PM</span>
+      </div>
+
+      <div class="slot">
+        <div class="time">09:00<br>10:30</div>
+        <div class="content">
+          <h4><svg class="ic"><use href="#i-cam"/></svg>Module 5 — AI Video Creation Fundamentals</h4>
+          <ul>
+            <li>Text-to-video versus image-to-video workflows</li>
+            <li>Cinematic prompting techniques</li>
+            <li>Motion, camera angles and transitions</li>
+            <li>Video storytelling fundamentals</li>
+          </ul>
+          <div class="tools">
+            <span class="tool"><svg class="ic"><use href="#i-play"/></svg>Seedance 2.5</span>
+            <span class="tool"><svg class="ic"><use href="#i-play"/></svg>Minimax H3</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="slot">
+        <div class="time">10:45<br>12:30</div>
+        <div class="content">
+          <h4><svg class="ic"><use href="#i-mega"/></svg>Module 6 — AI Advertisement &amp; Music Video Creation</h4>
+          <ul>
+            <li>Creating marketing storylines and commercial-style visuals</li>
+            <li>Integrating branding and messaging</li>
+            <li>Producing product and service promo videos</li>
+            <li>MV storytelling styles, formats and scene sequencing</li>
+            <li>Synchronising visuals with music mood</li>
+          </ul>
+          <div class="tools">
+            <span class="tool"><svg class="ic"><use href="#i-wand"/></svg>ChatGPT Image 2.5</span>
+            <span class="tool"><svg class="ic"><use href="#i-play"/></svg>Seedance 2.5</span>
+            <span class="tool"><svg class="ic"><use href="#i-play"/></svg>Minimax H3</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="slot break">
+        <div class="time">12:30</div>
+        <div class="content"><svg class="ic ic-sm"><use href="#i-cup"/></svg>Lunch break</div>
+      </div>
+
+      <div class="slot">
+        <div class="time">13:30<br>14:00</div>
+        <div class="content">
+          <h4><svg class="ic"><use href="#i-avatar"/></svg>Module 7 — AI Talking Avatar Video Creation</h4>
+          <ul>
+            <li>The AI avatar video workflow</li>
+            <li>Script-to-avatar production</li>
+            <li>Voice customisation techniques</li>
+            <li>Business applications</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="slot">
+        <div class="time">14:00<br>17:00</div>
+        <div class="content">
+          <h4><svg class="ic"><use href="#i-rocket"/></svg>Module 8 — Final Project: Your Own AI Video</h4>
+          <ul>
+            <li>Produce a complete AI-generated video using everything learned</li>
+            <li>Individual project development with one-to-one coaching</li>
+            <li>Peer sharing and feedback</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="trainer">
+    <div class="sec-head"><span class="ic-box"><svg class="ic ic-lg"><use href="#i-users"/></svg></span><h2>Your coach</h2><span class="rule"></span></div>
+    <div class="trainer">
+      <div class="trainer-side">
+        <div class="portrait">
+          <img src="david-hooi.jpg" width="880" height="880" alt="David Hooi, AI Adoption Specialist and Founder of D Action Consultancy.">
+          <span class="verified" title="HRD Corp Accredited Trainer"><svg class="ic"><use href="#i-check"/></svg></span>
+        </div>
+        <div class="stat"><div class="big">6,000+</div><div class="cap">participants trained</div></div>
+        <div class="stat"><div class="big">100+</div><div class="cap">companies</div></div>
+        <div class="stat"><div class="big">20 yrs</div><div class="cap">commercial leadership</div></div>
+      </div>
+      <div>
+        <h3>David Hooi, BTech, MBA</h3>
+        <p class="role">AI Coach · AI Adoption Specialist · Founder, D Action Consultancy</p>
+        <p>David is an AI coach and AI transformation strategist with over 20 years of commercial and leadership experience at GlaxoSmithKline, where he served as Sales Director and earned multiple Sales Excellence Awards.</p>
+        <p>He specialises in AI adoption for corporations and SMEs, sales leadership, and AI-powered content creation — helping teams integrate practical AI into daily work. In under two years he has trained more than 6,000 participants across 100+ organisations, including major banks, insurers and government agencies.</p>
+        <div class="creds">
+          <span class="tool"><svg class="ic"><use href="#i-check"/></svg>HRD Corp Accredited Trainer</span>
+          <span class="tool"><svg class="ic"><use href="#i-check"/></svg>Google Certified AI Leader</span>
+          <span class="tool"><svg class="ic"><use href="#i-check"/></svg>Bilingual facilitator</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="details">
+    <div class="sec-head"><span class="ic-box"><svg class="ic ic-lg"><use href="#i-seat"/></svg></span><h2>Who it's for</h2><span class="rule"></span></div>
+    <div class="two">
+      <div class="panel">
+        <h3><svg class="ic ic-lg"><use href="#i-users"/></svg>Recommended participants</h3>
+        <ul class="aud">
+          <li><svg class="ic"><use href="#i-mega"/></svg>Marketing and branding teams</li>
+          <li><svg class="ic"><use href="#i-bulb"/></svg>Trainers and educators</li>
+          <li><svg class="ic"><use href="#i-spark"/></svg>Social media and content creators</li>
+          <li><svg class="ic"><use href="#i-monitor"/></svg>Corporate communication teams</li>
+          <li><svg class="ic"><use href="#i-rocket"/></svg>Business owners and department heads driving AI adoption</li>
+        </ul>
+      </div>
+      <div class="panel">
+        <h3><svg class="ic ic-lg"><use href="#i-info"/></svg>Workshop details</h3>
+        <dl class="dl">
+          <dt><svg class="ic"><use href="#i-cal"/></svg>Duration</dt><dd>2 full days, weekend or weekday format</dd>
+          <dt><svg class="ic"><use href="#i-clock"/></svg>Time</dt><dd>9:00 AM – 5:00 PM daily</dd>
+          <dt><svg class="ic"><use href="#i-pin"/></svg>Venue</dt><dd>Your premises, or our training venue in the Klang Valley</dd>
+          <dt><svg class="ic"><use href="#i-bulb"/></svg>Level</dt><dd>Beginner friendly — no prior experience required</dd>
+          <dt><svg class="ic"><use href="#i-laptop"/></svg>Requirements</dt><dd>One laptop per participant, stable Wi-Fi, projector or large screen</dd>
+          <dt><svg class="ic"><use href="#i-target"/></svg>Method</dt><dd>Demonstrations, guided hands-on practice, prompt exercises, project-based learning</dd>
+        </dl>
+      </div>
+    </div>
+  </section>
+
+
+  <section id="register">
+    <div class="cta-band">
+      <span class="logo-chip cta-logo"><img src="dac-logo.png" alt="D Action Consultancy — Firing Up Growth"></span>
+      <p class="eyebrow">2-Day In-House Workshop · HRD Corp Claimable</p>
+      <h2>Bring AI video<span class="g">in-house.</span></h2>
+      <p>Tell us your team, your size and your timing — we'll send a tailored proposal, dates and an HRD Corp claimable quotation within two working days.</p>
+      <a class="btn" href="mailto:david@daction.com?subject=AI-Powered%20Video%20Creation%20Mastery%20%E2%80%94%20in-house%20proposal&amp;body=Hi%20David%2C%0A%0AWe%27d%20like%20a%20proposal%20for%20the%20AI-Powered%20Video%20Creation%20Mastery%20workshop.%0A%0ACompany%3A%0ADepartment%2Fteam%3A%0AApprox.%20number%20of%20participants%3A%0APreferred%20timing%3A%0A%0AThank%20you.">Request a proposal <svg class="ic ic-sm"><use href="#i-arrow"/></svg></a>
+      <div class="cta-strip">
+        <span><svg class="ic"><use href="#i-check"/></svg>Run at your office or ours</span>
+        <span><svg class="ic"><use href="#i-check"/></svg>Content tailored to your industry</span>
+        <span><svg class="ic"><use href="#i-check"/></svg>HRD Corp claimable</span>
+      </div>
+      <p class="seat-note"><svg class="ic ic-sm"><use href="#i-mail"/></svg>david@daction.com <span class="dot">·</span> +60 18-404 3913</p>
+    </div>
+  </section>
+
+</div>
+
+<footer>
+  <div class="wrap">
+    <div class="foot-grid">
+      <div class="foot-col">
+        <span class="logo-chip foot-logo"><img src="dac-logo.png" alt="D Action Consultancy — Firing Up Growth"></span>
+        <strong>D Action Consultancy &amp; Services Sdn Bhd</strong>
+        <span class="mono" style="font-size:12px">(202501060150)</span>
+        <span>Empowering People. Elevating Performance. AI in Action.</span>
+      </div>
+      <div class="foot-col">
+        <strong>David Hooi</strong>
+        <span>Managing Director | Chief AI Strategist</span>
+        <a href="tel:+60184043913"><svg class="ic ic-sm"><use href="#i-phone"/></svg>+60 18-404 3913</a>
+        <a href="mailto:david@daction.com"><svg class="ic ic-sm"><use href="#i-mail"/></svg>david@daction.com</a>
+        <a href="https://www.davidhooi.com" target="_blank" rel="noopener"><svg class="ic ic-sm"><use href="#i-globe"/></svg>www.davidhooi.com</a>
+      </div>
+      <div class="foot-col">
+        <strong>Register</strong>
+        <a href="https://forms.gle/3udHDwkBLWH8DkLE7" target="_blank" rel="noopener"><svg class="ic ic-sm"><use href="#i-link"/></svg>forms.gle/3udHDwkBLWH8DkLE7</a>
+      </div>
+    </div>
+    <p class="disclaimer"><svg class="ic ic-sm"><use href="#i-info"/></svg><span>Disclaimer: Subscription to the AI video applications used in this workshop is required. Tool line-up may be adjusted to reflect the latest platform updates at the time of delivery.</span></p>
+  </div>
+</footer>
